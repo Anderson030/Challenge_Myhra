@@ -1,3 +1,257 @@
-body {
-    background-color: #e0ccbe;
+@import url('https://fonts.cdnfonts.com/css/minerva-modern-font-family');
+
+:root {
+    --max-width: 90%;
+    --color-white: #fbfaf8;
+    --color-dark: black;
+    --color-primary: #e0ccbe;
+    --color-secundary: #e6daca;
 }
+
+@font-face {
+    font-family: minerva-modern;
+    src: url(https://use.typekit.net/af/2d15e1/00000000000000003b9afd25/27/l?subset_id=2&fvd=n4&v=3);
+  }
+
+
+body {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: minerva-modern;
+    padding: auto;
+    margin: auto;
+    line-height: 2rem;
+}
+
+header {
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    width: var(--max-width)
+}
+
+.icon-social {
+    flex-direction: row;
+}
+
+.icon {
+    width: 1rem;
+    height: 1rem;
+    padding: 1rem 1rem 1rem 0rem ;
+}
+
+.title-nav {
+    align-items: center;
+    justify-content: center;
+}
+
+.title-nav h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.title-nav nav {
+    padding: 1rem;
+}
+
+.title-nav a {
+    text-decoration: none;
+    margin: 1rem;
+    color: var(--color-dark);
+}
+
+.here {
+    border-bottom: 2px solid var(--color-dark);
+}
+
+.login-buttom a {
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+.login-buttom button {
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+    margin-left: 1rem;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--max-width);
+}
+
+main .last {
+    background-color: var(--color-secundary);
+    width: 100vw;
+}
+
+.img-inicial {
+    width: 100%;
+    height: 60%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.section-items {
+    padding: 0 2rem 2rem 0;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-fruits {
+    filter: brightness(80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: bottom;
+    height: 35rem;
+    width: 100vw;
+    background-size: 100% auto;
+    background-image: url(./images/fruits.jpg);
+    text-align: center;
+    color: var(--color-white);
+}
+
+.consult {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 5%;
+}
+
+.info-consult {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    padding: 1rem;
+    background-color: var(--color-white);
+    margin: 1rem;
+    margin-left: 0;
+}
+
+.service {
+    border: 1px solid var(--color-secundary);
+    padding: 1rem 2rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.service button {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.login a {
+    color: var(--color-dark);
+    margin-left: 0.5rem;
+}
+
+.title-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.number {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.container-img-consult {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+
+.img-consult {
+    width: 80%;
+    height: 60%;
+    margin-top: 1rem;
+    object-fit: cover;
+}
+
+.final {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.section-final {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.final-question {
+    padding: 3rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: var(--max-width);
+    background-color: var(--color-primary);
+    padding: 4rem;
+}
+
+footer button, input {
+    padding: 1rem 2rem;
+    margin: 1rem 0.5rem;
+}
+
+footer button {
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+}
+
+hr {
+    background-color: var(--color-dark);
+    width: 100%;
+}
+
